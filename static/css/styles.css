@@ -1,0 +1,451 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	}
+	
+:focus {
+	outline: 0;
+	}
+	
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	}
+	
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+	}
+	
+blockquote, q {
+	quotes: "" "";
+	}
+	
+body {
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
+	font-size: 13px;
+	line-height: 21px;
+	color: #303030;
+	background: url(../images/bg.png);
+	}
+	
+a {
+	color: #315169;
+	text-decoration: none;
+	}
+	
+a:hover {
+	color: #315169;
+	text-decoration: underline;
+	}
+
+.wrap {
+	width: 975px;
+	margin: 0 auto;
+    position: relative;
+	}
+	
+.fl {
+	float: left;
+	}
+	
+.fr {
+	float: right;
+	}
+	
+.em {
+	font-style: italic;
+	}
+	
+.clear {
+	clear: both;
+	}
+
+.half {
+	width: 46%;
+	margin-right: 7%;
+	}
+	
+.half:nth-child(odd) {
+	margin-right: 0%;
+	}
+
+
+
+#top-bar {
+	background: #13181a;
+	height: 40px;
+	}
+	
+
+#top-bar ul li {
+	color: #313131;
+	font-size: 11px;
+	font-weight: bold;
+	float: left;
+	margin: 4px 10px 0 0;
+	text-shadow: 0 1px 1px #000000;
+	}
+	
+#top-bar ul li:after { 
+	content: "|";
+	color: #313131;
+	}
+	
+#top-bar ul li:last-child:after { 
+	content: "";
+	}
+	
+#top-bar ul li a {
+	padding: 4px 10px 4px 0px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	}
+	
+#top-bar ul li a:hover {
+	text-decoration: underline;
+	}
+	
+/*----- 2.2. LINKS -----*/
+	
+#top-bar ul.fr li:after { 
+	content: "";
+	}
+	
+#top-bar ul.fr li:first-child:after {
+	content: "|";
+	color: #313131;
+	}
+	
+#top-bar ul.fr li span {
+	display: inline-block;
+	}
+
+#top-bar ul.fr li span.subscribe {
+	color: #ffffff;
+	padding: 4px 10px;
+	}
+		
+#top-bar ul.fr li a {
+	padding: 6px 0px;
+	display: inline-block;
+	}
+	
+#top-bar ul.fr li:last-child {
+	margin-right: 0px;
+	}
+	
+#top-bar ul.fr li a span {
+	height: 22px;
+	width: 20px;
+	}
+	
+#top-bar ul.fr li a span.twitter {
+	background: url(../images/icon-twit.png) no-repeat;
+	}
+
+#top-bar ul.fr li a span.email {
+	background: url(../images/icon-email.png) no-repeat;
+	}
+
+#top-bar ul.fr li a span.rss {
+	background: url(../images/icon-rss.png) no-repeat;
+	}
+	
+#content {
+	background: url(../images/content-bg.png) repeat-x;
+	z-index: 2;
+	margin-top: -3px;
+	padding: 40px 0 60px 0;
+    position: relative;
+	}
+	
+#content h1, #content h2, #content h3, 
+#content h4, #content h5, #content h6 {
+	font-family: "Helvetica", "Arial", serif;
+	font-weight: bold;
+	color: #202020;
+	margin-bottom: 20px;
+	}
+	
+#content h1 { font-size: 28px; letter-spacing: -0.50px; }
+#content h2 { font-size: 24px; letter-spacing: -0.50px; }
+#content h3 { font-size: 20px; letter-spacing: -0.25px; }
+#content h4 { font-size: 16px; }
+#content h5 { font-size: 14px; }
+#content h6 { font-size: 12px; }
+
+#content p, #content ul, #content blockquote, #content pre {
+	margin-bottom: 20px;
+	}
+	
+#content .wrap {
+	background: url(../images/main-bg.png) repeat-y #ffffff;
+	box-shadow: 0 0 4px #bbbbbb;
+	-moz-box-shadow: 0 0 4px #bbbbbb;
+	-webkit-box-shadow: 0 0 4px #bbbbbb;
+	min-height: 570px;
+	}
+			
+
+#main {
+	width: 590px;
+	padding: 40px 30px 20px 30px;
+	}
+.msg_wrap {
+	width: 500px;
+	margin: 0 auto;
+    margin-bottom: 215px;
+	}
+
+#message {
+	background: #ffffff;
+	z-index: 2;
+	margin-top: -3px;
+	padding: 40px 0 60px 0;
+    position: relative;
+	}
+
+#message .msg_wrap {
+	background: url(../images/main-bg.png) repeat-y #ffffff;
+	box-shadow: 0 0 4px #bbbbbb;
+	-moz-box-shadow: 0 0 4px #bbbbbb;
+	-webkit-box-shadow: 0 0 4px #bbbbbb;
+	min-height: 300px;
+	}
+
+	
+/*----- 5.4. SIDEBAR -----*/
+
+#sidebar {
+	width: 325px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+	}
+	
+	
+
+/*-------------------------------------
+   6. WIDGETS
+-------------------------------------*/
+
+#sidebar .widget {
+	width: 261px;
+	padding: 35px 32px 45px;
+
+	background: url(../images/divider.png) repeat-x bottom;
+	}
+
+#sidebar .widget:last-child {
+	background: none;
+	}
+	
+#sidebar .widget h3 {
+	margin-bottom: 30px;
+	}
+	
+/*----- 6.1. SEARCH WIDGET -----*/	
+		
+#sidebar #widget-search form {
+	background: url(../images/widget-search-bg.png) no-repeat;
+	height: 26px;
+	width: 265px;
+	margin: 5px 0 0 0;
+	}
+	
+#sidebar #widget-search input[type="text"] {
+	background: none;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	color: #303030;
+	text-shadow: 0 1px 0 #ffffff;
+	margin-left: 12px;
+	padding: 5px 0;
+	width: 215px;
+	height: 14px;
+	}
+	
+#sidebar #widget-search button[type="submit"] {
+	background: none;
+	border: none;
+	width: 32px;
+	height: 25px;
+	vertical-align: top;
+	outline: none;
+	cursor: pointer;
+	}
+	
+/*----- 6.2. SPONSORS WIDGET -----*/	
+		
+#sidebar #widget-sponsors {
+	line-height: 28px;
+	letter-spacing: 6px;
+	}
+	
+#sidebar #widget-sponsors img {
+	box-shadow: 0 1px 2px #999999;
+	-moz-box-shadow: 0 1px 2px #999999;
+	-webkit-box-shadow: 0 1px 2px #999999;
+	}
+	
+/*----- 6.3. TABBED POST WIDGET -----*/	
+		
+#sidebar #widget-cats ul.tabs,
+#sidebar #widget-archive ul.tabs {
+	height: 41px;
+	margin-bottom: 35px;
+	}
+
+#sidebar #widget-cats ul.tabs li,
+#sidebar #widget-archive ul.tabs li { 
+	float: left;
+	margin-right: 15px;
+	}
+
+#sidebar #widget-cats ul.tabs a,
+#sidebar #widget-archive ul.tabs a { 
+	color: #315169;
+	text-decoration: none;
+	padding: 10px 5px;
+	display: block;
+	}
+
+#sidebar #widget-cats ul.tabs a:hover,
+#sidebar #widget-archive ul.tabs a:hover {
+	text-decoration: underline;
+	}
+
+#sidebar #widget-cats ul.tabs a.current,
+#sidebar #widget-archive ul.tabs a.current,
+#sidebar #widget-cats ul.tabs a.current:hover,
+#sidebar #widget-archive ul.tabs a.current:hover,
+#sidebar #widget-cats ul.tabs li.current a,
+#sidebar #widget-archive ul.tabs li.current a {
+	background: url(../images/button-right.png) no-repeat right;
+	display: block;
+	margin-left: -1px;
+	padding: 0 15px 0 0;
+	text-decoration: none;
+	}	
+	
+#sidebar #widget-cats ul.tabs a.current span,
+#sidebar #widget-archive ul.tabs a.current span {
+	background: url(../images/button-left.png) no-repeat left;
+	display: block;
+	margin-right: -1px;
+	padding: 10px 0 10px 15px;
+	}
+	
+#sidebar #widget-cats .panes .pane .post {
+	margin-bottom: 20px;
+	}
+	
+#sidebar #widget-cats .panes .pane .post:last-child {
+	margin-bottom: 0;
+	}
+	
+#sidebar #widget-cats .panes .pane h4 {
+	margin-bottom: 3px;
+	padding-top: 8px;
+	line-height: 18px;	
+	}
+	
+#sidebar #widget-cats .panes .pane .em {
+	font-size: 12px;	
+	}
+	
+#sidebar .widget .panes .pane {
+	display: none;		
+	}
+		
+/*----- 6.4. ADVERTISMENT WIDGET -----*/	
+		
+#sidebar #widget-ad img {
+	margin: 0 -18px 30px;
+	box-shadow: 0 1px 4px #cccccc;
+	-moz-box-shadow: 0 1px 4px #cccccc;
+	-webkit-box-shadow: 0 1px 4px #cccccc;
+	}
+	
+#sidebar #widget-ad div {
+	text-align: center;
+	}
+	
+#sidebar #widget-ad div a {
+	font-size: 11px;
+	font-style: italic;
+	color: #999999;
+	text-decoration: none;
+	}
+	
+
+
+
+/*-------------------------------------
+   8. FOOTER
+-------------------------------------*/
+
+#footer {
+	background: #13181a;
+	height: 35px;
+	font-size: 11px;
+	text-shadow: 0px 1px 1px #000000;
+	padding-top: 15px;
+	}
+	
+#footer p.fl {
+	color: #777777;
+	font-style: italic;
+	}
+			
+#footer ul.fr li {
+	color: #313131;
+	font-weight: bold;
+	float: left;
+	margin-right: 10px;
+	text-shadow: 0 1px 1px #000000;
+	}
+	
+#footer ul.fr li:after { 
+	content: "|";
+	color: #313131;
+	}
+	
+#footer ul.fr li:last-child:after { 
+	content: "";
+	}
+	
+#footer ul.fr li a {
+	padding-right: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	}
+	
+#footer ul.fr li a:hover {
+	text-decoration: underline;
+	}
+
+.error-text{
+    color: #ff1300;
+    font-style: italic;
+}
